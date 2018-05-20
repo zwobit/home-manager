@@ -312,6 +312,13 @@ example then becomes
   
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="file:///home/rycee/devel/nixpkgs-18.03/nixos/modules/misc/lib.nix" target="_top">
               &lt;home-manager//home/rycee/devel/nixpkgs-18.03/nixos/modules/misc/lib.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-manual.html.enable"></a><a class="term" href="options.html#opt-manual.html.enable"><code class="option">manual.html.enable</code></a></span></dt><dd><p>Whether to install the HTML manual. This also installs the
+<span class="command"><strong>home-manager-help</strong></span> tool, which opens a local
+copy of the Home Manager manual in the system web browser.
+</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/manual.nix#blob-path" target="_top">
+              &lt;home-manager/modules/manual.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-manual.manpages.enable"></a><a class="term" href="options.html#opt-manual.manpages.enable"><code class="option">manual.manpages.enable</code></a></span></dt><dd><p>Whether to install the configuration manual page. The manual can
 be reached by <span class="command"><strong>man home-configuration.nix</strong></span>.
 </p><p>
@@ -2260,6 +2267,18 @@ this option) to command strings or directly to build outputs.
   
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/zsh.nix#blob-path" target="_top">
               &lt;home-manager/modules/programs/zsh.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-qt.enable"></a><a class="term" href="options.html#opt-qt.enable"><code class="option">qt.enable</code></a></span></dt><dd><p>Whether to enable Qt 4 and 5 configuration.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        true
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
+              &lt;home-manager/modules/misc/qt.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-qt.useGtkTheme"></a><a class="term" href="options.html#opt-qt.useGtkTheme"><code class="option">qt.useGtkTheme</code></a></span></dt><dd><p>Whether Qt 4 and 5 should be set up to use the GTK theme
+settings.
+</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
+              &lt;home-manager/modules/misc/qt.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.blueman-applet.enable"></a><a class="term" href="options.html#opt-services.blueman-applet.enable"><code class="option">services.blueman-applet.enable</code></a></span></dt><dd><p>Whether to enable Blueman applet.
 
 Note, for the applet to work, 'blueman' package should also be installed system-wide
