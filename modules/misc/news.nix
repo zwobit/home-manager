@@ -672,6 +672,20 @@ in
         '';
       }
 
+      {
+        time = "2018-05-29T16:44:49+00:00";
+        message = ''
+          Four new modules are available:
+
+              programs.chromium
+              programs.google-chrome
+              programs.google-chrome-beta
+              programs.google-chrome-dev
+
+          These currently allow the configuration of extensions for
+          Chromium-based browsers.
+        '';
+      }
     ];
   };
 }
