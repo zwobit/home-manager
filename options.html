@@ -670,8 +670,7 @@ shell.
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/bash.nix#blob-path" target="_top">
               &lt;home-manager/modules/programs/bash.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.bash.shellAliases"></a><a class="term" href="options.html#opt-programs.bash.shellAliases"><code class="option">programs.bash.shellAliases</code></a></span></dt><dd><p>An attribute set that maps aliases (the top level attribute names in
-this option) to command strings or directly to build outputs. The
-aliases are added to all users' shells.
+this option) to command strings or directly to build outputs.
 </p><p><span class="emphasis"><em>Type:</em></span> attribute set</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
     {
@@ -1398,6 +1397,72 @@ use Python 3 plugins.
         true
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/neovim.nix#blob-path" target="_top">
               &lt;home-manager/modules/programs/neovim.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.enable"></a><a class="term" href="options.html#opt-programs.newsboat.enable"><code class="option">programs.newsboat.enable</code></a></span></dt><dd><p>Whether to enable the Newsboat feed reader.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        true
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.autoReload"></a><a class="term" href="options.html#opt-programs.newsboat.autoReload"><code class="option">programs.newsboat.autoReload</code></a></span></dt><dd><p>Whether to enable automatic reloading while newsboat is running.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.browser"></a><a class="term" href="options.html#opt-programs.newsboat.browser"><code class="option">programs.newsboat.browser</code></a></span></dt><dd><p>External browser to use.</p><p><span class="emphasis"><em>Type:</em></span> string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        "\${pkgs.xdg_utils}/bin/xdg-open"
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.extraConfig"></a><a class="term" href="options.html#opt-programs.newsboat.extraConfig"><code class="option">programs.newsboat.extraConfig</code></a></span></dt><dd><p>Extra configuration values that will be appended to the end.</p><p><span class="emphasis"><em>Type:</em></span> string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        ""
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.maxItems"></a><a class="term" href="options.html#opt-programs.newsboat.maxItems"><code class="option">programs.newsboat.maxItems</code></a></span></dt><dd><p>Maximum number of items per feed, 0 for infinite.</p><p><span class="emphasis"><em>Type:</em></span> signed integer</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        0
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.queries"></a><a class="term" href="options.html#opt-programs.newsboat.queries"><code class="option">programs.newsboat.queries</code></a></span></dt><dd><p>A list of queries to use.</p><p><span class="emphasis"><em>Type:</em></span> attribute set of strings</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        
+    {
+    
+    }
+  
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        
+    {
+    foo = ''rssurl =~ "example.com"''; 
+    }
+  
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.reloadThreads"></a><a class="term" href="options.html#opt-programs.newsboat.reloadThreads"><code class="option">programs.newsboat.reloadThreads</code></a></span></dt><dd><p>How many threads to use for updating the feeds.</p><p><span class="emphasis"><em>Type:</em></span> signed integer</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        5
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.reloadTime"></a><a class="term" href="options.html#opt-programs.newsboat.reloadTime"><code class="option">programs.newsboat.reloadTime</code></a></span></dt><dd><p>Time in minutes between reloads.</p><p><span class="emphasis"><em>Type:</em></span> null or signed integer</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        60
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.newsboat.urls"></a><a class="term" href="options.html#opt-programs.newsboat.urls"><code class="option">programs.newsboat.urls</code></a></span></dt><dd><p>List of urls and tokens.</p><p><span class="emphasis"><em>Type:</em></span> list of attribute sets</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        
+    [
+    
+    ]
+  
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        
+    [
+    
+    {
+    tags = 
+    [
+    "foo" "bar" 
+    ]
+  ; url = "http://example.com"; 
+    }
+   
+    ]
+  
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/newsboat.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/newsboat.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.pidgin.enable"></a><a class="term" href="options.html#opt-programs.pidgin.enable"><code class="option">programs.pidgin.enable</code></a></span></dt><dd><p>Whether to enable Pidgin messaging client.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         false
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
@@ -1945,7 +2010,8 @@ update the terminal's title.
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/termite.nix#blob-path" target="_top">
               &lt;home-manager/modules/programs/termite.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.termite.modifyOtherKeys"></a><a class="term" href="options.html#opt-programs.termite.modifyOtherKeys"><code class="option">programs.termite.modifyOtherKeys</code></a></span></dt><dd><p>Emit escape sequences for extra keys,
-like the modifyOtherKeys resource for xterm(1).
+like the modifyOtherKeys resource for
+<span class="citerefentry"><span class="refentrytitle">xterm</span>(1)</span>.
 </p><p><span class="emphasis"><em>Type:</em></span> null or boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         null
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/termite.nix#blob-path" target="_top">
@@ -2109,6 +2175,14 @@ directory.
     
     }
   
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/zsh.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/zsh.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.zsh.history.expireDuplicatesFirst"></a><a class="term" href="options.html#opt-programs.zsh.history.expireDuplicatesFirst"><code class="option">programs.zsh.history.expireDuplicatesFirst</code></a></span></dt><dd><p>Expire duplicates first.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/zsh.nix#blob-path" target="_top">
+              &lt;home-manager/modules/programs/zsh.nix&gt;
+            </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.zsh.history.extended"></a><a class="term" href="options.html#opt-programs.zsh.history.extended"><code class="option">programs.zsh.history.extended</code></a></span></dt><dd><p>Save timestamp into the history file.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/programs/zsh.nix#blob-path" target="_top">
               &lt;home-manager/modules/programs/zsh.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.zsh.history.ignoreDups"></a><a class="term" href="options.html#opt-programs.zsh.history.ignoreDups"><code class="option">programs.zsh.history.ignoreDups</code></a></span></dt><dd><p>Do not enter command lines into the history list
@@ -2321,7 +2395,9 @@ You can add it to the dbus packages in system configuration:
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/services/compton.nix#blob-path" target="_top">
               &lt;home-manager/modules/services/compton.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.compton.blurExclude"></a><a class="term" href="options.html#opt-services.compton.blurExclude"><code class="option">services.compton.blurExclude</code></a></span></dt><dd><p>List of windows to exclude background blur.
-See <code class="literal">compton(1)</code> man page for more examples.
+See the
+<span class="citerefentry"><span class="refentrytitle">compton</span>(1)</span>
+man page for more examples.
 </p><p><span class="emphasis"><em>Type:</em></span> list of strings</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
     [
@@ -2357,7 +2433,9 @@ dbe = true;
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/services/compton.nix#blob-path" target="_top">
               &lt;home-manager/modules/services/compton.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.compton.fadeExclude"></a><a class="term" href="options.html#opt-services.compton.fadeExclude"><code class="option">services.compton.fadeExclude</code></a></span></dt><dd><p>List of conditions of windows that should not be faded.
-See <code class="literal">compton(1)</code> man page for more examples.
+See the
+<span class="citerefentry"><span class="refentrytitle">compton</span>(1)</span>
+man page for more examples.
 </p><p><span class="emphasis"><em>Type:</em></span> list of strings</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
     [
@@ -2407,7 +2485,9 @@ See <code class="literal">compton(1)</code> man page for more examples.
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/services/compton.nix#blob-path" target="_top">
               &lt;home-manager/modules/services/compton.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.compton.opacityRule"></a><a class="term" href="options.html#opt-services.compton.opacityRule"><code class="option">services.compton.opacityRule</code></a></span></dt><dd><p>List of opacity rules.
-See <code class="literal">compton(1)</code> man page for more examples.
+See the
+<span class="citerefentry"><span class="refentrytitle">compton</span>(1)</span>
+man page for more examples.
 </p><p><span class="emphasis"><em>Type:</em></span> list of strings</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
     [
@@ -2435,7 +2515,9 @@ See <code class="literal">compton(1)</code> man page for more examples.
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/services/compton.nix#blob-path" target="_top">
               &lt;home-manager/modules/services/compton.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.compton.shadowExclude"></a><a class="term" href="options.html#opt-services.compton.shadowExclude"><code class="option">services.compton.shadowExclude</code></a></span></dt><dd><p>List of conditions of windows that should have no shadow.
-See <code class="literal">compton(1)</code> man page for more examples.
+See the
+<span class="citerefentry"><span class="refentrytitle">compton</span>(1)</span>
+man page for more examples.
 </p><p><span class="emphasis"><em>Type:</em></span> list of strings</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
     [
@@ -2473,7 +2555,9 @@ See <code class="literal">compton(1)</code> man page for more examples.
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/rycee/home-manager/blob/master/modules/services/compton.nix#blob-path" target="_top">
               &lt;home-manager/modules/services/compton.nix&gt;
             </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.compton.vSync"></a><a class="term" href="options.html#opt-services.compton.vSync"><code class="option">services.compton.vSync</code></a></span></dt><dd><p>Enable vertical synchronization using the specified method.
-See <code class="literal">compton(1)</code> man page available methods.
+See the
+<span class="citerefentry"><span class="refentrytitle">compton</span>(1)</span>
+man page for available methods.
 </p><p><span class="emphasis"><em>Type:</em></span> string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         "none"
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
