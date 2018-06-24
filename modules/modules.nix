@@ -13,6 +13,7 @@ with lib;
 let
 
   modules = [
+    ./accounts/mail.nix
     ./files.nix
     ./home-environment.nix
     ./manual.nix
@@ -40,6 +41,7 @@ let
     ./programs/info.nix
     ./programs/lesspipe.nix
     ./programs/man.nix
+    ./programs/mbsync.nix
     ./programs/mercurial.nix
     ./programs/neovim.nix
     ./programs/newsboat.nix
